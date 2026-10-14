@@ -13,7 +13,6 @@ I'm not a software engineer. I design the systems, meaning the architecture, dat
 | Build | What it does | Stack |
 |---|---|---|
 | [**newsletter-digest**](https://github.com/xj-2045/newsletter-digest) | Pulls the last 24h of newsletters from Gmail, analyzes each one in a parallel subagent, and emails a single HTML digest | Claude Code skill · subagents · Gmail MCP · Python · Resend |
-| [**morning-ritual**](https://github.com/xj-2045/morning-ritual) | Daily briefing: calendar, monthly kanban, and newsletter digest merged into one static HTML page | Claude Code skill · Python · Google Calendar MCP |
 | [**narrative-thesis**](https://github.com/xj-2045/narrative-thesis) | Stock research: scrapes 6 months of Reddit and X, then writes a 1-pager of top news, bull theses, and bear theses with source links | Claude Code skill · Python · Apify · python-docx |
 
 ### 🧠 Systems: context, memory, orchestration
