@@ -1,47 +1,36 @@
-### Hi, I'm XJ 👋
+### What I build with AI
 
-Finance executive who designs agentic systems. VP, Corporate Development & Finance at Apex.AI. Before that I was an institutional investor. CPA · CFA · Stanford GSB.
+I design the systems. AI coding agents write most of the code.
 
-I'm not a software engineer. I design the systems, meaning the architecture, data model, and quality bar, and AI coding agents (mostly [Claude Code](https://claude.com/claude-code)) write most of the code. This profile is where those builds live.
+#### Personal operating system
 
-**Design principle:** push computation into deterministic code, keep the LLM for judgment, and put a human gate wherever an error would be expensive.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xj-2045/xj-os/main/assets/dataflow.svg" alt="Data flow: outside world → Grok bot fleet → shared Drive folder ↔ Claude Code" width="100%">
+</p>
 
----
+- **[XJ-OS](https://github.com/xj-2045/xj-os)** · [interactive explorer](https://xj-2045.github.io/xj-os/): Claude Code and a fleet of Grok bots run my week. They never call each other. They trade Markdown files through one shared folder, and each file has one writer.
+- **Bot fleet** · private: about 27 bots for digests, inbox triage, reminders and chat monitoring.
+- **Goals, tasks and weekly page** · private: one local page with goals by year, a task board synced with the bots, and a weekly action sheet.
+- **Weekly self-audit** · private: a script collects facts, Claude writes findings, and I decide each fix. Claude's memory gets a cleanup pass in the same run.
 
-### 🔧 Automation: take the manual work out
+#### News
 
-| Build | What it does | Stack |
-|---|---|---|
-| [**newsletter-digest**](https://github.com/xj-2045/newsletter-digest) | Pulls the last 24h of newsletters from Gmail, analyzes each one in a parallel subagent, and emails a single HTML digest | Claude Code skill · subagents · Gmail MCP · Python · Resend |
-| [**narrative-thesis**](https://github.com/xj-2045/narrative-thesis) | Stock research: scrapes 6 months of Reddit and X, then writes a 1-pager of top news, bull theses, and bear theses with source links | Claude Code skill · Python · Apify · python-docx |
+- **[Newsletter digest](https://github.com/xj-2045/newsletter-digest)**: 24 hours of newsletters become one morning digest, posted to my chat at 7:00.
+- **Podcast and YouTube scan** · private: each Saturday, a scan of the week's episodes from my feed list.
+- **Morning digest** · private: a daily brief from X, the WSJ and my chat groups.
 
-### 🧠 Systems: context, memory, orchestration
+#### Reading
 
-| Build | What it does | Stack |
-|---|---|---|
-| **Personal OS** *(private)* | An AI-native operating system for my work and life: 20 skills, 12 subagents, hook-driven context injection, typed memory with a linting agent, and generated dashboards for daily, weekly, and monthly reviews | Claude Code · Python hooks · Markdown/Obsidian · Git · MCP |
-| **Weekly Wall** *(private)* | One interactive page covering the week from people I follow on X, podcasts, YouTube, and 70 WeChat feeds | Apify · RSS / iTunes API · self-hosted werss (Docker + SQLite) · Python |
-| **AI economics wiki** *(private)* | LLM-maintained knowledge base with proposal-gated ingest (the agent proposes, I approve) and local semantic search over ~1,500 notes | Markdown · QMD · Mermaid argument maps |
-| [**Forking Paths of Ideas**](https://github.com/xj-2045/forking-paths-of-ideas) · [live](https://forking-paths-of-ideas.vercel.app) | Interactive map of 50+ intellectual movements and 137 thinkers, with a bring-your-own-key Claude fallback for anyone not in the dataset | JavaScript · Tailwind · Claude API · Vercel |
-| **Fitness tracker** · [live](https://fitness-tracker-xj.vercel.app) | Strength and Hyrox-readiness dashboard built on my workout log | Next.js · React · TypeScript · Tailwind · Recharts · Hevy API · Vercel |
+- **[Reading Room](https://github.com/xj-2045/reading-room)** · [demo](https://reading-room-demo.vercel.app): a self-hosted read-it-later shelf for articles, video, podcasts, WeChat and X posts. A companion skill turns open browser tabs into a sorted reading list.
+- **Notes search** · private: semantic search over about 1,300 notes from earlier years.
 
-### 🛡️ Trust: evaluation and adversarial review
+#### AI economics
 
-| Build | What it does | Stack |
-|---|---|---|
-| **Stage-gate review system** *(private)* | Six reviewer agents critique a high-stakes document in a fixed order: substance first, readability last. Each agent has a pass/fail gate, every critique must cite a source (anti-fabrication rule), and a failed gate re-runs only that gate after repair | Claude Code subagents · Python linter · structured corpora |
-| **AI-native finance function** *(work)* | Weekly reporting from source data to board-ready output, investor relationship management, and an auditing agent that catches errors before they reach the board | LLM agents · finance data stack |
+- **AI economics wiki** · private: a wiki of 100+ pages that an LLM maintains. It proposes each change and I approve it.
+- **[Narrative thesis](https://github.com/xj-2045/narrative-thesis)**: six months of Reddit and X posts on a stock become one page of news, bull cases and bear cases.
+- **Investment analysis flow** · private: screen, thesis, model, pressure test, decision.
 
-```mermaid
-flowchart LR
-    I["Instructions<br/>(skills, CLAUDE.md)"] --> O["Orchestration<br/>(agent decides order,<br/>handles errors)"]
-    O --> S["Deterministic scripts<br/>(Python: fetch, compute, render)"]
-    O --> A["Subagents<br/>(parallel analysis,<br/>independent review)"]
-    S --> H{"Human gate"}
-    A --> H
-    H --> D["Output<br/>(HTML, email, doc)"]
-```
+#### Life
 
----
-
-✍️ Writing on the economics of AI at [**AI P&L**](https://aipnl.substack.com) · 🌐 [www.xjzhang.com](https://www.xjzhang.com) · 💼 [LinkedIn](https://www.linkedin.com/in/xingjianzh/) · 𝕏 [@xing_roads](https://x.com/xing_roads)
+- **[Fitness tracker](https://fitness-tracker-xj.vercel.app)**: a strength and race-readiness dashboard built on my workout log.
+- **[Forking Paths of Ideas](https://github.com/xj-2045/forking-paths-of-ideas)** · [live](https://forking-paths-of-ideas.vercel.app): an interactive map of 50+ intellectual movements and 137 thinkers.
