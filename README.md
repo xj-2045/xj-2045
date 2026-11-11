@@ -16,7 +16,7 @@ I design the systems. AI coding agents write most of the code.
 #### News
 
 - **[Newsletter digest](https://github.com/xj-2045/newsletter-digest)**: 24 hours of newsletters become one morning digest, posted to my chat at 7:00.
-- **Podcast and YouTube scan** · private: each Saturday, a scan of the week's episodes from my feed list.
+- **Podcast and YouTube scan** · [demo](https://podcast-scan-demo.vercel.app): each Saturday, an agent scans the week's episodes from my feed list and ranks a Top 10.
 - **Morning digest** · private: a daily brief from X, the WSJ and my chat groups.
 
 #### Reading
@@ -32,5 +32,5 @@ I design the systems. AI coding agents write most of the code.
 
 #### Life
 
-- **[Fitness tracker](https://fitness-tracker-xj.vercel.app)**: a strength and race-readiness dashboard built on my workout log.
+- **Fitness tracker** · [demo](https://fitness-tracker-xj.vercel.app): a strength and race-readiness dashboard built on my workout log.
 - **[Forking Paths of Ideas](https://github.com/xj-2045/forking-paths-of-ideas)** · [live](https://forking-paths-of-ideas.vercel.app): an interactive map of 50+ intellectual movements and 137 thinkers.
