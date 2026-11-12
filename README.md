@@ -16,7 +16,7 @@ I design the systems. AI coding agents write most of the code.
 #### News
 
 - **[Newsletter digest](https://github.com/xj-2045/newsletter-digest)**: 24 hours of newsletters become one morning digest, posted to my chat at 7:00.
-- **Podcast and YouTube scan** · [demo](https://podcast-scan-demo.vercel.app): each Saturday, an agent scans the week's episodes from my feed list and ranks a Top 10.
+- **Podcast and YouTube scan** · [demo](https://podcast-scan-demo.vercel.app): each week, one wall of the new episodes and videos from my feed list.
 - **Morning digest** · private: a daily brief from X, the WSJ and my chat groups.
 
 #### Reading
