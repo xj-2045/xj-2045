@@ -22,6 +22,7 @@ I design the systems. AI coding agents write most of the code.
 #### Reading
 
 - **[Reading Room](https://github.com/xj-2045/reading-room)** · [demo](https://reading-room-demo.vercel.app): a self-hosted read-it-later shelf for articles, video, podcasts, WeChat and X posts. A companion skill turns open browser tabs into a sorted reading list.
+- **Xing Paths** · [live](https://xing-paths.vercel.app): my books and favorite films as a 3D room you walk into. A script turns two Markdown lists into shelves of covers and posters.
 - **Notes search** · private: semantic search over about 1,300 notes from earlier years.
 
 #### AI economics
